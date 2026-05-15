@@ -6,3 +6,4 @@ Fortaleza 2: integracion de 15 modulos conectados en una sola plataforma
 Fortaleza 2: integracion de 15 modulos conectados en una sola plataforma
 Debilidad 1: sistema limitado a escritorio, no cuenta con una version movil
 Debilidad 2: requiere conocimineto tecnico en java para mantenimineto
+Roles del quipo: Magdeline lider del proyecto, Greisy analista
