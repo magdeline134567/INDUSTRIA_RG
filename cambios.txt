@@ -17,3 +17,4 @@ Modelo OrdenTrabajo implementado para gestion de produccion
 Modelo TecnicoCompleto creado con datos del tecnico de campo
 Modelo Usuario desarrollado para gestion de accesos
 Pruebas de conexion a base de datos realizadas exitosamente
+Pruebas de insercion de datos completadas
