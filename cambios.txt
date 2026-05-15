@@ -38,3 +38,4 @@ Mejora en exportacion de reportes en ReportManager
 Actualizacion de graficas en ChartGenerator
 Revision de permisos de usuarios en Usuario
 Mejora en envio de notificaciones en EmailSender
+Actualizacion del modelo Compra con nuevos proveedores
