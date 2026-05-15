@@ -42,3 +42,4 @@ Actualizacion del modelo Compra con nuevos proveedores
 Revision de datos de TecnicoCompleto
 Mejora en instalacion automatica de DatabaseInstaller
 Actualizacion de configuracion en CheckConfig
+Revision final del sistema y pruebas generales completadas
