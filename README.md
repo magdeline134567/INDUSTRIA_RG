@@ -8,3 +8,4 @@ Debilidad 1: sistema limitado a escritorio, no cuenta con una version movil
 Debilidad 2: requiere conocimineto tecnico en java para mantenimineto
 Roles del quipo: Magdeline lider del proyecto, Greisy analista
 Tablero GitHub Projects organizado con taeas asignadas por integrante
+README actualizado con descripcion general del sistema INDUSTRIA_RG
