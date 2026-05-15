@@ -12,3 +12,4 @@ Modelo Desglose creado para calculo de materiales y costos
 Modelo Instalacion desarrollado para programacion de instalaciones
 Modelo InventarioItem implementado para control de stock
 Modelo MovimientoContable creado para registro financiero
+Modelo NominaItem desarrollado para calculo de salarios
