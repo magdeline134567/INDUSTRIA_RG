@@ -21,3 +21,4 @@ Pruebas de insercion de datos completadas
 Pruebas completas de insercion con todos los modulos
 Pruebas de tecnicos realizadas y validadas
 Generador de graficas implementado para el dashboard
+Instalador de base de datos desarrollado
