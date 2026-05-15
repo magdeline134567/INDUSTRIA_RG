@@ -13,3 +13,4 @@ Modelo Instalacion desarrollado para programacion de instalaciones
 Modelo InventarioItem implementado para control de stock
 Modelo MovimientoContable creado para registro financiero
 Modelo NominaItem desarrollado para calculo de salarios
+Modelo OrdenTrabajo implementado para gestion de produccion
