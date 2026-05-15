@@ -1,3 +1,4 @@
 Conexion principal a base de datos MySQL configurada
 Conexion secundaria agregada para sesiones multiples
 SessionManager implementado para control de sesiones de usuario
+Controlador de clientes desarrollado con funciones CRUD
