@@ -36,3 +36,4 @@ Mejora en registro de MovimientoContable
 Actualizacion de alertas de stock en InventarioItem
 Mejora en exportacion de reportes en ReportManager
 Actualizacion de graficas en ChartGenerator
+Revision de permisos de usuarios en Usuario
