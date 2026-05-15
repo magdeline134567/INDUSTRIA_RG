@@ -23,3 +23,4 @@ Pruebas de tecnicos realizadas y validadas
 Generador de graficas implementado para el dashboard
 Instalador de base de datos desarrollado
 Modulo de envio de correos implementado
+Gestor de reportes desarrollado para exportacion de datos
