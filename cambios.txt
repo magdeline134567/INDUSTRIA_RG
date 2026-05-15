@@ -30,3 +30,4 @@ Optimizacion de consultas SQL en Conexion
 Mejora en el manejo de errores de SessionManager
 Actualizacion del modelo Desglose con nuevos calculos
 Mejora en la logica de OrdenTrabajo
+Actualizacion del modelo Instalacion con fecha y hora
