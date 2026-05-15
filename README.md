@@ -2,3 +2,5 @@
 Proyecto de análisis y gestión de aplicación móvil/web. Incluye organización del equipo, asignación de roles, planificación mediante GitHub Projects y análisis de fortalezas y debilidades de la aplicación seleccionada.
 # inicio del proyecto INDUSTRI_RG
 ## Fortaleza 1: modulo de desglose automatiza calculo de materiales y costo
+Fortaleza 2: integracion de 15 modulos conectados en una sola plataforma
+Fortaleza 2: integracion de 15 modulos conectados en una sola plataforma
