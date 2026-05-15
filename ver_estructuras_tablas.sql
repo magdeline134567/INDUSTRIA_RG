@@ -1,0 +1,92 @@
+-- Script para verificar estructuras de todas las tablas
+USE INDUSTRIA_RG;
+GO
+
+PRINT '=== VERIFICANDO ESTRUCTURA DE TABLAS ===';
+
+-- Verificar tabla Cliente
+PRINT 'Estructura de tabla Cliente:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Cliente' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla Desglose
+PRINT 'Estructura de tabla Desglose:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Desglose' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla OrdenTrabajo
+PRINT 'Estructura de tabla OrdenTrabajo:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'OrdenTrabajo' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla Compras
+PRINT 'Estructura de tabla Compras:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Compras' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla Nomina
+PRINT 'Estructura de tabla Nomina:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Nomina' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla Contabilidad
+PRINT 'Estructura de tabla Contabilidad:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Contabilidad' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+-- Verificar tabla Usuario
+PRINT 'Estructura de tabla Usuario:';
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE,
+    IS_NULLABLE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'Usuario' 
+ORDER BY ORDINAL_POSITION;
+GO
+
+PRINT '=== VERIFICACIÓN COMPLETADA ===';
+GO

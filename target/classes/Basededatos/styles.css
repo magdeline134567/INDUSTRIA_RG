@@ -1,0 +1,49 @@
+.tab-pane *.tab-header-area {
+    -fx-padding: 0 0 0 0;
+    -fx-pref-height: 0;
+    -fx-opacity: 0;
+    visibility: hidden;
+}
+
+/* Colores Corporativos Suaves y Modernos */
+.default-color0.chart-pie, .default-color0.chart-bar {
+    -fx-pie-color: #4A90E2; 
+    -fx-bar-fill: #4A90E2;
+}
+.default-color1.chart-pie, .default-color1.chart-bar {
+    -fx-pie-color: #3F51B5; 
+    -fx-bar-fill: #3F51B5;
+}
+.default-color2.chart-pie, .default-color2.chart-bar {
+    -fx-pie-color: #00BCD4; 
+    -fx-bar-fill: #00BCD4;
+}
+.default-color3.chart-pie, .default-color3.chart-bar {
+    -fx-pie-color: #7986CB; 
+    -fx-bar-fill: #7986CB;
+}
+.default-color4.chart-pie, .default-color4.chart-bar {
+    -fx-pie-color: #009688; 
+    -fx-bar-fill: #009688;
+}
+.default-color5.chart-pie, .default-color5.chart-bar {
+    -fx-pie-color: #81D4FA; 
+    -fx-bar-fill: #81D4FA;
+}
+
+/* Leyendas sincronizadas */
+.chart-legend-item-symbol.default-color0 { -fx-background-color: #4A90E2, white; }
+.chart-legend-item-symbol.default-color1 { -fx-background-color: #3F51B5, white; }
+.chart-legend-item-symbol.default-color2 { -fx-background-color: #00BCD4, white; }
+.chart-legend-item-symbol.default-color3 { -fx-background-color: #7986CB, white; }
+.chart-legend-item-symbol.default-color4 { -fx-background-color: #009688, white; }
+.chart-legend-item-symbol.default-color5 { -fx-background-color: #81D4FA, white; }
+
+/* Bordes redondeados y estilo premium */
+.chart-bar {
+    -fx-background-radius: 8 8 0 0; /* Solo redondea las puntas de arriba! */
+}
+.chart-pie {
+    -fx-border-color: white;
+    -fx-border-width: 3px;
+}

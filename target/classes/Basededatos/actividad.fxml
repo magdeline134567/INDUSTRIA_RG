@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" style="-fx-padding: 20; -fx-background-color: #f8fafc;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="besededatos.controllers.MainController">
+    
+    <children>
+        <!-- HEADER -->
+        <HBox>
+            <VBox>
+                <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="ACTIVIDAD DEL SISTEMA" />
+                <Label style="-fx-font-size: 13px; -fx-text-fill: #3a7ca5;" text="Registro de eventos y acciones" />
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <Button onAction="#refrescarActividades" style="-fx-background-color: #0a3d62; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 12; -fx-padding: 8 20;" text="Refrescar" />
+        </HBox>
+        
+        <Separator />
+        
+        <!-- CONTENEDOR DE ACTIVIDADES (DONDE SE MUESTRAN LOS DATOS) -->
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent;" VBox.vgrow="ALWAYS">
+            <content>
+                <VBox fx:id="contenedorActividad" spacing="12" style="-fx-padding: 5;">
+                    <!-- Los items se llenan desde Java -->
+                </VBox>
+            </content>
+        </ScrollPane>
+        
+        <!-- FOOTER INFO -->
+        <HBox style="-fx-padding: 10 0 0 0;">
+            <Label fx:id="lblTotalActividades" style="-fx-text-fill: #5a7a9a; -fx-font-size: 11px;" text="Mostrando últimos registros" />
+        </HBox>
+        
+    </children>
+</VBox>

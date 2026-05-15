@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox stylesheets="@styles.css" style="-fx-background-color: linear-gradient(to bottom, #f0f7ff, #e3f2fd);" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="besededatos.MainController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+    <children>
+        <HBox alignment="CENTER_LEFT" style="-fx-padding: 0 0 15 0;">
+            <children>
+                <VBox>
+                    <children>
+                        <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="INDUSTRIA R.G" />
+                        <Label style="-fx-font-size: 14px; -fx-text-fill: #3a7ca5; -fx-padding: 5 0 0 0;" text="PROVERVIOS 14:23 · Sistema de Gestión Integral" />
+                    </children>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS" />
+                <HBox alignment="CENTER_RIGHT" spacing="20">
+                    <children>
+                        <VBox alignment="CENTER_RIGHT">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Periodo Actual" />
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Marzo 2024" />
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Fecha / Hora" />
+                                <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="28/03/2024 · 14:30 PM" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+
+        <HBox style="-fx-background-color: #0a3d62; -fx-background-radius: 15; -fx-padding: 5;" VBox.vgrow="NEVER">
+            <children>
+                <FlowPane hgap="5" vgap="5" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Button onAction="#irADashboard" style="-fx-background-color: #ffffff22; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 10 15;" text="Dashboard" />
+                        <Button onAction="#irADesglose" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Desglose" />
+                        <Button onAction="#irAOrdenes" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Órdenes" />
+                        <Button onAction="#irAInventario" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Inventario" />
+                        <Button onAction="#irACompras" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Compras" />
+                        <Button onAction="#irANomina" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Nómina" />
+                        <Button onAction="#irAContabilidad" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Contabilidad" />
+                        <Button onAction="#irAClientes" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Clientes" />
+                        <Button onAction="#irATecnicos" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Técnicos" />
+                        <Button onAction="#irAReportes" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Reportes" />
+                        <Button onAction="#irAConfiguracion" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Configuración" />
+                        <Button onAction="#irAUsuarios" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Usuarios" />
+                        <Button onAction="#irAVentas" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Ventas" />
+                        <Button onAction="#irAInstalaciones" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Instalaciones" />
+                        <Button onAction="#irAActividad" style="-fx-text-fill: white; -fx-background-color: transparent; -fx-background-radius: 10; -fx-padding: 10 15;" text="Actividad" />
+                    </children>
+                </FlowPane>
+                <HBox alignment="CENTER" spacing="10" style="-fx-background-color: #ffffff22; -fx-background-radius: 25; -fx-padding: 5 15 5 15;" HBox.hgrow="NEVER">
+                    <children>
+                        <Label style="-fx-text-fill: white; -fx-font-weight: bold;" text="Admin" />
+                        <Label style="-fx-text-fill: white; -fx-font-size: 12px;" text="Online" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+
+        <TabPane fx:id="mainTabPane" style="-fx-background-color: transparent; -fx-padding: 15 0 0 0;" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+
+            <Tab text="Dashboard">
+                <VBox VBox.vgrow="ALWAYS">
+                    <children>
+
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0a3d62; -fx-padding: 20 0 10 0;" text="INDICADORES CLAVE DE RENDIMIENTO" />
+
+                <GridPane hgap="20" style="-fx-padding: 0 0 20 0;" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="20" />
+                        <ColumnConstraints percentWidth="20" />
+                        <ColumnConstraints percentWidth="20" />
+                        <ColumnConstraints percentWidth="20" />
+                        <ColumnConstraints percentWidth="20" />
+                    </columnConstraints>
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="0">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Ventas Totales" />
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="\$8.45M" />
+                                <HBox alignment="CENTER_LEFT" spacing="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-weight: bold;" text="↑ 15.3%" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="vs mes pasado" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="1">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Utilidad Neta" />
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #27ae60;" text="\$2.89M" />
+                                <HBox alignment="CENTER_LEFT" spacing="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-weight: bold;" text="↑ 12.8%" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="margen 34.2%" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="2">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Órdenes Completadas" />
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="47" />
+                                <HBox alignment="CENTER_LEFT" spacing="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-weight: bold;" text="↑ 8" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="vs ayer" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="3">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Eficiencia Producción" />
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="94%" />
+                                <HBox alignment="CENTER_LEFT" spacing="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-weight: bold;" text="↑ 3.2%" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="meta 90%" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="4">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Clientes Activos" />
+                                <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="128" />
+                                <HBox alignment="CENTER_LEFT" spacing="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-weight: bold;" text="↑ 12" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="este mes" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <GridPane hgap="20" style="-fx-padding: 10 0 30 0;" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                    </columnConstraints>
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25;" GridPane.columnIndex="0">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Ventas del Mes" />
+                                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="\$2.45M" />
+                                <HBox alignment="CENTER_LEFT" spacing="15" style="-fx-padding: 15 0 0 0;">
+                                    <children>
+                                        <Label style="-fx-background-color: #e8f5e9; -fx-text-fill: #27ae60; -fx-padding: 5 15; -fx-background-radius: 20; -fx-font-weight: bold;" text="↑ 12%" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="vs mes anterior" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25;" GridPane.columnIndex="1">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Órdenes Activas" />
+                                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="15" />
+                                <HBox spacing="15" style="-fx-padding: 15 0 0 0;">
+                                    <children>
+                                        <Label style="-fx-text-fill: #ff9800;" text="5 en producción" />
+                                        <Label style="-fx-text-fill: #2196f3;" text="3 en instalación" />
+                                        <Label style="-fx-text-fill: #e67e22;" text="7 pendientes" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25;" GridPane.columnIndex="2">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Alertas de Stock" />
+                                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="8" />
+                                <HBox alignment="CENTER_LEFT" spacing="15" style="-fx-padding: 15 0 0 0;">
+                                    <children>
+                                        <Label style="-fx-background-color: #ffebee; -fx-text-fill: #e67e22; -fx-padding: 5 15; -fx-background-radius: 20; -fx-font-weight: bold;" text="⚠ Crítico" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="3 materiales" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25;" GridPane.columnIndex="3">
+                            <children>
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #5a7a9a;" text="Margen Promedio" />
+                                <Label style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="42%" />
+                                <HBox alignment="CENTER_LEFT" spacing="15" style="-fx-padding: 15 0 0 0;">
+                                    <children>
+                                        <Label style="-fx-background-color: #e8f5e9; -fx-text-fill: #27ae60; -fx-padding: 5 15; -fx-background-radius: 20; -fx-font-weight: bold;" text="↑ 3%" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="vs meta" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <VBox style="-fx-spacing: 15; -fx-padding: 0 0 30 0;">
+                    <children>
+                        <Label style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="⚡ ACCIONES RÁPIDAS" />
+                        <HBox spacing="15">
+                            <children>
+                                <Button onAction="#irADesglose" style="-fx-background-color: #0a3d62; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 15 25;" text=" + Nuevo Desglose" />
+                                <Button onAction="#irAOrdenes" style="-fx-background-color: #2c5f8a; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 15 25;" text=" + Orden Trabajo" />
+                                <Button onAction="#irAInventario" style="-fx-background-color: #3a7ca5; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 15 25;" text=" + Entrada Stock" />
+                                <Button onAction="#irANomina" style="-fx-background-color: #5c9ead; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 15 25;" text=" Generar Nómina" />
+                                <Button onAction="#irAReportes" style="-fx-background-color: #7fb3c5; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 15; -fx-padding: 15 25;" text=" Reporte Financiero" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <HBox spacing="20" style="-fx-padding: 0 0 30 0;" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" HBox.hgrow="ALWAYS">
+                            <children>
+                                <javafx.scene.chart.PieChart fx:id="chartOrdenesPie" title="Distribución de Órdenes (Estados)" prefHeight="300"/>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" HBox.hgrow="ALWAYS">
+                            <children>
+                                <javafx.scene.chart.BarChart fx:id="chartIngresosBar" title="Ingresos vs Gastos" prefHeight="300">
+                                    <xAxis><javafx.scene.chart.CategoryAxis side="BOTTOM" /></xAxis>
+                                    <yAxis><javafx.scene.chart.NumberAxis side="LEFT" /></yAxis>
+                                </javafx.scene.chart.BarChart>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <GridPane hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="60" />
+                        <ColumnConstraints percentWidth="40" />
+                    </columnConstraints>
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25;" GridPane.columnIndex="0">
+                            <children>
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="VENTAS DEL MES" />
+                                <HBox alignment="CENTER" spacing="35" style="-fx-padding: 20 0 0 0;">
+                                    <children>
+                                        <VBox alignment="CENTER" spacing="8">
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="2.1M" />
+                                            <Rectangle arcHeight="15" arcWidth="15" fill="#0a3d62" height="100" width="45" />
+                                            <Label style="-fx-text-fill: #5a7a9a;" text="Sem 1" />
+                                        </VBox>
+                                        <VBox alignment="CENTER" spacing="8">
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="2.5M" />
+                                            <Rectangle arcHeight="15" arcWidth="15" fill="#2c5f8a" height="120" width="45" />
+                                            <Label style="-fx-text-fill: #5a7a9a;" text="Sem 2" />
+                                        </VBox>
+                                        <VBox alignment="CENTER" spacing="8">
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="3.1M" />
+                                            <Rectangle arcHeight="15" arcWidth="15" fill="#3a7ca5" height="150" width="45" />
+                                            <Label style="-fx-text-fill: #5a7a9a;" text="Sem 3" />
+                                        </VBox>
+                                        <VBox alignment="CENTER" spacing="8">
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="2.8M" />
+                                            <Rectangle arcHeight="15" arcWidth="15" fill="#5c9ead" height="135" width="45" />
+                                            <Label style="-fx-text-fill: #5a7a9a;" text="Sem 4" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 20, 0, 0, 10); -fx-padding: 25; -fx-spacing: 15;" GridPane.columnIndex="1">
+                            <children>
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="🕐 ACTIVIDAD RECIENTE" />
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <children>
+                                        <Label style="-fx-font-size: 20px; -fx-text-fill: #27ae60;" text="•" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Nuevo desglose creado" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="VEN-2025-089 • Hace 10 min" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <children>
+                                        <Label style="-fx-font-size: 20px; -fx-text-fill: #2196f3;" text="•" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Orden completada" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="OT-2025-045 • Hace 25 min" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <children>
+                                        <Label style="-fx-font-size: 20px; -fx-text-fill: #e67e22;" text="•" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Stock bajo detectado" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Perfil aluminio • Hace 1h" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <children>
+                                        <Label style="-fx-font-size: 20px; -fx-text-fill: #9b59b6;" text="•" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Pago registrado" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Constructora Sol • ₡125,000" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+                                    <children>
+                                        <Label style="-fx-font-size: 20px; -fx-text-fill: #0a3d62;" text="•" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="Nuevo cliente" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Inversiones Mendoza • Hace 3h" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <Button onAction="#irAActividad" style="-fx-background-color: transparent; -fx-text-fill: #0a3d62; -fx-font-weight: bold; -fx-border-color: #0a3d62; -fx-border-radius: 8; -fx-padding: 10;" text="Ver toda la actividad →" />
+                            </children>
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #0a3d62; -fx-padding: 30 0 15 0;" text=" PROYECTOS EN CURSO" />
+
+                <GridPane hgap="20" style="-fx-padding: 0 0 30 0;" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="33" />
+                        <ColumnConstraints percentWidth="33" />
+                        <ColumnConstraints percentWidth="34" />
+                    </columnConstraints>
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" spacing="10">
+                                    <children>
+                                        <Rectangle arcHeight="5" arcWidth="5" fill="#0a3d62" height="40" width="5" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="VEN-2025-089" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Constructora Sol S.A." />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <GridPane hgap="10" style="-fx-padding: 15 0 0 0;" vgap="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Tipo:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #0a3d62; -fx-font-size: 12px;" text="Corrediza Aluminio" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Avance:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                        <Label style="-fx-text-fill: #27ae60; -fx-font-size: 12px;" text="75%" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    </children>
+                                    <columnConstraints>
+                                        <ColumnConstraints />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints />
+                                        <RowConstraints />
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="1">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" spacing="10">
+                                    <children>
+                                        <Rectangle arcHeight="5" arcWidth="5" fill="#3a7ca5" height="40" width="5" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="VEN-2025-092" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Inmobiliaria Este" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <GridPane hgap="10" style="-fx-padding: 15 0 0 0;" vgap="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Tipo:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #0a3d62; -fx-font-size: 12px;" text="Proyectil Aluminio" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Avance:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                        <Label style="-fx-text-fill: #ff9800; -fx-font-size: 12px;" text="45%" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    </children>
+                                    <columnConstraints>
+                                        <ColumnConstraints />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints />
+                                        <RowConstraints />
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" GridPane.columnIndex="2">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" spacing="10">
+                                    <children>
+                                        <Rectangle arcHeight="5" arcWidth="5" fill="#5c9ead" height="40" width="5" />
+                                        <VBox>
+                                            <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="VEN-2025-095" />
+                                            <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Urbanización Los Pinos" />
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                                <GridPane hgap="10" style="-fx-padding: 15 0 0 0;" vgap="5">
+                                    <children>
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Tipo:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #0a3d62; -fx-font-size: 12px;" text="Corrediza 2 hojas" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #5a7a9a; -fx-font-size: 12px;" text="Avance:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                        <Label style="-fx-text-fill: #2196f3; -fx-font-size: 12px;" text="30%" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    </children>
+                                    <columnConstraints>
+                                        <ColumnConstraints />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints />
+                                        <RowConstraints />
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+
+                <HBox spacing="20" style="-fx-padding: 0 0 20 0;">
+                    <children>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text=" PRODUCTIVIDAD" />
+                                <GridPane hgap="20" style="-fx-padding: 15 0 0 0;" vgap="10">
+                                    <children>
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Instalaciones hoy:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="4" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Pendientes:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #e67e22;" text="7" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Técnicos activos:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="12" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    </children>
+                                    <columnConstraints>
+                                        <ColumnConstraints />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints /><RowConstraints /><RowConstraints />
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                        <VBox style="-fx-background-color: white; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.1), 15, 0, 0, 5); -fx-padding: 20;" HBox.hgrow="ALWAYS">
+                            <children>
+                                <Label style="-fx-font-weight: bold; -fx-text-fill: #0a3d62;" text="FINANZAS" />
+                                <GridPane hgap="20" style="-fx-padding: 15 0 0 0;" vgap="10">
+                                    <children>
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Cuentas por cobrar:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #e67e22;" text="425,000" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Cuentas por pagar:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #2196f3;" text="189,000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label style="-fx-text-fill: #5a7a9a;" text="Flujo de caja:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                        <Label style="-fx-font-weight: bold; -fx-text-fill: #27ae60;" text="1.2M" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    </children>
+                                    <columnConstraints>
+                                        <ColumnConstraints />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints /><RowConstraints /><RowConstraints />
+                                    </rowConstraints>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <HBox style="-fx-background-color: #d4e6f1; -fx-background-radius: 15; -fx-padding: 20; -fx-spacing: 15; -fx-alignment: center-left;" VBox.vgrow="NEVER">
+                    <children>
+                        <Label style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #0a3d62;" text=" INDUSTRIA R.G" />
+                        <Label style="-fx-text-fill: #0a3d62;" text="PROVERVIOS 14:23 · Sistema actualizado: 28/03/2026 " />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Label style="-fx-background-color: #0a3d62; -fx-text-fill: white; -fx-padding: 8 20; -fx-background-radius: 25; -fx-font-weight: bold;" text="SISTEMA ACTIVO" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Desglose">
+        <VBox style="-fx-background-color: #e3f2fd; -fx-spacing: 15;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+            <children>
+                <HBox alignment="CENTER_LEFT">
+                    <children>
+                        <VBox>
+                            <Label style="-fx-font-size:24px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="DESGLOSE Y CÁLCULO DE VENTANAS" />
+                            <Label style="-fx-font-size:13px;-fx-text-fill:#3a7ca5;" text="Ingrese dimensiones y materiales para calcular el costo total" />
+                        </VBox>
+                    </children>
+                </HBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:25;-fx-spacing:20; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.15),15,0,0,5);">
+                    <children>
+                        <Label style="-fx-font-size:18px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="🔧 CALCULADORA DE DESGLOSE" />
+                        <GridPane hgap="25" vgap="15">
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="33" />
+                                <ColumnConstraints percentWidth="33" />
+                                <ColumnConstraints percentWidth="34" />
+                            </columnConstraints>
+                            <VBox spacing="12" GridPane.columnIndex="0">
+                                <Label style="-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-font-size:14px;" text=" DATOS GENERALES" />
+                                <GridPane hgap="10" vgap="10">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="80" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Código:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <TextField fx:id="txtCodigo" prefWidth="160" promptText="Ej: VEN-2025-099" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Cliente:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbCliente" prefWidth="200" promptText="Seleccionar cliente..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Tipo ventana:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbTipoVentana" prefWidth="200" promptText="Seleccionar tipo..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Ancho (m):" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <TextField fx:id="txtAncho" prefWidth="160" promptText="Ej: 1.80" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="Alto (m):" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtAlto" prefWidth="160" promptText="Ej: 1.20" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="Área:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                    <Label fx:id="lblArea" style="-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="0.00 m²" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="Perímetro:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                                    <Label fx:id="lblPerimetro" style="-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="0.00 m" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                            <VBox spacing="12" GridPane.columnIndex="1">
+                                <Label style="-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-font-size:14px;" text="MATERIALES" />
+                                <GridPane hgap="10" vgap="10">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="90" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Tipo perfil:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <ComboBox fx:id="cmbTipoPerfil" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Grosor (mm):" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbGrosor" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Tipo vidrio:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbTipoVidrio" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Espesor (mm):" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="cmbEspesor" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                            <VBox spacing="12" GridPane.columnIndex="2">
+                                <Label style="-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-font-size:14px;" text="COMPONENTES Y COSTOS" />
+                                <GridPane hgap="10" vgap="10">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="90" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Herrajes:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <ComboBox fx:id="cmbHerrajes" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Sellador:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbSellador" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Acabado:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbAcabado" prefWidth="170" promptText="Seleccionar..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Cant. hojas:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <Spinner fx:id="spnCantHojas" prefWidth="170" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label text="Costo mat.:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                    <TextField fx:id="txtCostoMateriales" prefWidth="170" promptText="₡ 0.00" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label text="Mano obra:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                    <TextField fx:id="txtManoObra" prefWidth="170" promptText="₡ 0.00" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="G. indirectos:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                                    <TextField fx:id="txtGastosIndirectos" prefWidth="170" promptText="₡ 0.00" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="Precio venta:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+                                    <TextField fx:id="txtPrecioVenta" prefWidth="170" promptText="₡ 0.00" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                     <rowConstraints>
+                        <RowConstraints />
+                     </rowConstraints>
+                        </GridPane>
+                        <HBox alignment="CENTER" spacing="20" style="-fx-padding:10 0 0 0;">
+                            <VBox alignment="CENTER" style="-fx-background-color:#d4e6f1;-fx-background-radius:8;-fx-padding:12 25;">
+                                <Label style="-fx-font-size:11px;-fx-text-fill:#0a3d62;" text="COSTO TOTAL" />
+                                <Label fx:id="lblCostoTotal" style="-fx-font-size:22px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text=" 0.00" />
+                            </VBox>
+                            <VBox alignment="CENTER" style="-fx-background-color:#d4e6f1;-fx-background-radius:8;-fx-padding:12 25;">
+                                <Label style="-fx-font-size:11px;-fx-text-fill:#0a3d62;" text="MARGEN" />
+                                <Label fx:id="lblMargen" style="-fx-font-size:22px;-fx-font-weight:bold;-fx-text-fill:#27ae60;" text="0.0%" />
+                            </VBox>
+                            <Button onAction="#FnNuevoDesglose" style="-fx-background-color:#5a7a9a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="NUEVO" />
+                            <Button onAction="#FnGuardarDesglose" style="-fx-background-color:#0a3d62;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="GUARDAR" />
+                            <Button onAction="#FnEditarDesglose" style="-fx-background-color:#2c5f8a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="EDITAR" />
+                            <Button onAction="#FnBorrarDesglose" style="-fx-background-color:#3a7ca5;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="BORRAR" />
+                            <Button onAction="#FnCalcular" style="-fx-background-color:#3a7ca5;-fx-text-fill:white;-fx-font-size:14px; -fx-padding:12 30;-fx-background-radius:30;" text="CALCULAR" />
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:20; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.1),10,0,0,3);" VBox.vgrow="ALWAYS">
+                    <Label style="-fx-font-size:16px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-padding:0 0 10 0;" text="HISTORIAL DE DESGLOSES" />
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableView" prefHeight="220" onMouseClicked="#SeleccionarDesglose">
+                        <columns>
+                            <TableColumn fx:id="colCodigo" prefWidth="130" text="Código" />
+                            <TableColumn fx:id="colCliente" prefWidth="200" text="Cliente" />
+                            <TableColumn fx:id="colTipoVentana" prefWidth="160" text="Tipo Ventana" />
+                            <TableColumn fx:id="colAncho" prefWidth="90" text="Ancho (m)" />
+                            <TableColumn fx:id="colAlto" prefWidth="90" text="Alto (m)" />
+                            <TableColumn fx:id="colPrecioVenta" prefWidth="130" text="Precio Venta (₡)" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Órdenes">
+        <VBox style="-fx-background-color:#e3f2fd;-fx-spacing:15;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+            <children>
+                <HBox alignment="CENTER_LEFT">
+                    <VBox>
+                        <Label style="-fx-font-size:24px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="GESTIÓN DE ÓRDENES DE TRABAJO" />
+                        <Label style="-fx-font-size:13px;-fx-text-fill:#3a7ca5;" text="Seguimiento de producción e instalación" />
+                    </VBox>
+                </HBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:25;-fx-spacing:15; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.15),15,0,0,5);">
+                    <children>
+                        <Label style="-fx-font-size:18px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="📋 NUEVA ORDEN DE TRABAJO" />
+                        <GridPane hgap="20" vgap="14">
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="50" />
+                                <ColumnConstraints percentWidth="50" />
+                            </columnConstraints>
+                            <VBox spacing="12" GridPane.columnIndex="0">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="130" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Código orden:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <TextField fx:id="txtCodigoOrden" prefWidth="220" promptText="Ej: OT-2025-050" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Cliente:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbClienteOrden" prefWidth="250" promptText="Seleccionar cliente..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Desglose asoc.:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbDesglose" prefWidth="250" promptText="Seleccionar desglose..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Técnico:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="cmbTecnico" prefWidth="250" promptText="Asignar técnico..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                            <VBox spacing="12" GridPane.columnIndex="1">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="130" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Estado:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <ComboBox fx:id="cmbEstadoOrden" prefWidth="220" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Fecha inicio:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <DatePicker fx:id="dpFechaInicio" prefWidth="220" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Fecha estimada:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <DatePicker fx:id="dpFechaEstimada" prefWidth="220" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Observaciones:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <TextField fx:id="txtObservaciones" prefWidth="220" promptText="Notas adicionales..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                     <rowConstraints>
+                        <RowConstraints />
+                     </rowConstraints>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding:10 0 0 0;">
+                            <Button onAction="#FnNuevoOrden" style="-fx-background-color:#5a7a9a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="NUEVO" />
+                            <Button onAction="#FnGuardarOrden" style="-fx-background-color:#0a3d62;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="GUARDAR" />
+                            <Button onAction="#FnEditarOrden" style="-fx-background-color:#2c5f8a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="EDITAR" />
+                            <Button onAction="#FnBorrarOrden" style="-fx-background-color:#3a7ca5;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="BORRAR" />
+                        </HBox>
+                    </children>
+                </VBox>
+                <HBox spacing="15">
+                    <children>
+                        <VBox alignment="CENTER" prefWidth="140" style="-fx-background-color:#e3f2fd;-fx-background-radius:10;-fx-padding:15;-fx-spacing:5;">
+                            <Label style="-fx-font-size:26px;-fx-font-weight:bold;-fx-text-fill:#2196f3;" text="—" />
+                            <Label text="Pendientes" />
+                        </VBox>
+                        <VBox alignment="CENTER" prefWidth="140" style="-fx-background-color:#fff3e0;-fx-background-radius:10;-fx-padding:15;-fx-spacing:5;">
+                            <Label style="-fx-font-size:26px;-fx-font-weight:bold;-fx-text-fill:#ff9800;" text="—" />
+                            <Label text="En Producción" />
+                        </VBox>
+                        <VBox alignment="CENTER" prefWidth="140" style="-fx-background-color:#f1f8e9;-fx-background-radius:10;-fx-padding:15;-fx-spacing:5;">
+                            <Label style="-fx-font-size:26px;-fx-font-weight:bold;-fx-text-fill:#4caf50;" text="—" />
+                            <Label text="Listas Instalar" />
+                        </VBox>
+                        <VBox alignment="CENTER" prefWidth="140" style="-fx-background-color:#e8f5e9;-fx-background-radius:10;-fx-padding:15;-fx-spacing:5;">
+                            <Label style="-fx-font-size:26px;-fx-font-weight:bold;-fx-text-fill:#2e7d32;" text="—" />
+                            <Label text="Instaladas" />
+                        </VBox>
+                    </children>
+                </HBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:20; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.1),10,0,0,3);" VBox.vgrow="ALWAYS">
+                    <Label style="-fx-font-size:16px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-padding:0 0 10 0;" text="ÓRDENES REGISTRADAS" />
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewOrdenes" prefHeight="230" onMouseClicked="#SeleccionarOrden">
+                        <columns>
+                            <TableColumn fx:id="colCodigoOrden" prefWidth="120" text="Código" />
+                            <TableColumn fx:id="colClienteOrden" prefWidth="180" text="Cliente" />
+                            <TableColumn fx:id="colDesglose" prefWidth="130" text="Desglose" />
+                            <TableColumn fx:id="colFechaInicio" prefWidth="110" text="F. Inicio" />
+                            <TableColumn fx:id="colFechaEstimada" prefWidth="110" text="F. Estimada" />
+                            <TableColumn fx:id="colEstadoOrden" prefWidth="120" text="Estado" />
+                            <TableColumn fx:id="colTecnico" prefWidth="150" text="Técnico" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Inventario">
+        <VBox style="-fx-background-color: #e3f2fd;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="GESTIÓN DE INVENTARIO" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Control de materiales y kardex" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarInventario" style="-fx-background-color: #2196f3; -fx-text-fill: white;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <!-- Tabla de Inventario -->
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewInventario" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarInventario" prefHeight="250" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colInvId" prefWidth="50" text="ID" />
+                            <TableColumn fx:id="colInvNombre" prefWidth="180" text="Material" />
+                            <TableColumn fx:id="colInvCategoria" prefWidth="100" text="Categoría" />
+                            <TableColumn fx:id="colInvCantidad" prefWidth="80" text="Cantidad" />
+                            <TableColumn fx:id="colInvCosto" prefWidth="80" text="Costo U." />
+                            <TableColumn fx:id="colInvPrecio" prefWidth="90" text="Precio U." />
+                            <TableColumn fx:id="colInvUbicacion" prefWidth="100" text="Ubicación" />
+                        </columns>
+                    </TableView>
+                    
+                    <!-- Formulario de Inventario -->
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Detalle de Material" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtInvNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Categoría:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <ComboBox fx:id="cmbInvCategoria" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            
+                            <Label text="Cantidad:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                            <TextField fx:id="txtInvCantidad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            
+                            <Label text="Costo:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                            <TextField fx:id="txtInvCosto" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                            
+                            <Label text="Precio:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                            <TextField fx:id="txtInvPrecio" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                            <Label text="Ubicación:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+                            <TextField fx:id="txtInvUbicacion" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarInventario" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarInventario" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarInventario" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Compras">
+        <VBox style="-fx-background-color:#e3f2fd;-fx-spacing:15;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+            <children>
+                <HBox alignment="CENTER_LEFT">
+                    <VBox>
+                        <Label style="-fx-font-size:24px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="GESTIÓN DE COMPRAS" />
+                        <Label style="-fx-font-size:13px;-fx-text-fill:#3a7ca5;" text="Órdenes de compra y recepción de materiales" />
+                    </VBox>
+                </HBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:25;-fx-spacing:15; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.15),15,0,0,5);">
+                    <children>
+                        <Label style="-fx-font-size:18px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="🛒 NUEVA ORDEN DE COMPRA" />
+                        <GridPane hgap="20" vgap="14">
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="50" />
+                                <ColumnConstraints percentWidth="50" />
+                            </columnConstraints>
+                            <VBox spacing="12" GridPane.columnIndex="0">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="130" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Código OC:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <TextField fx:id="txtCodigoCompra" prefWidth="220" promptText="Ej: OC-2025-010" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Proveedor:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbProveedor" prefWidth="250" promptText="Seleccionar proveedor..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Material:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbMaterial" prefWidth="250" promptText="Seleccionar material..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Estado:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <ComboBox fx:id="cmbEstado" prefWidth="250" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                            <VBox spacing="12" GridPane.columnIndex="1">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="130" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Cantidad:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <TextField fx:id="txtCantidad" prefWidth="220" promptText="Ej: 100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Precio unitario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <TextField fx:id="txtPrecioUnitario" prefWidth="220" promptText="₡ 0.00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="TOTAL:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <Label fx:id="lblTotal" style="-fx-font-size:20px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="0.00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Fecha entrega:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                    <DatePicker fx:id="dpFechaEntrega" prefWidth="220" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                     <rowConstraints>
+                        <RowConstraints />
+                     </rowConstraints>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding:10 0 0 0;">
+                            <Button onAction="#FnNuevoCompra" style="-fx-background-color:#5a7a9a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="NUEVO" />
+                            <Button onAction="#FnGuardarCompra" style="-fx-background-color:#0a3d62;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="💾 GUARDAR" />
+                            <Button onAction="#FnEditarCompra" style="-fx-background-color:#2c5f8a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="EDITAR" />
+                            <Button onAction="#FnBorrarCompra" style="-fx-background-color:#3a7ca5;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="BORRAR" />
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:20; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.1),10,0,0,3);" VBox.vgrow="ALWAYS">
+                    <Label style="-fx-font-size:16px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-padding:0 0 10 0;" text="📦 HISTORIAL DE COMPRAS" />
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewCompras" prefHeight="250" onMouseClicked="#SeleccionarCompra">
+                        <columns>
+                            <TableColumn fx:id="colCodigoCompra" prefWidth="120" text="Código OC" />
+                            <TableColumn fx:id="colProveedor" prefWidth="170" text="Proveedor" />
+                            <TableColumn fx:id="colMaterial" prefWidth="170" text="Material" />
+                            <TableColumn fx:id="colFechaEntrega" prefWidth="110" text="F. Entrega" />
+                            <TableColumn fx:id="colCantidadCompra" prefWidth="90" text="Cantidad" />
+                            <TableColumn fx:id="colPrecioUnitarioCompra" prefWidth="120" text="P. Unitario" />
+                            <TableColumn fx:id="colTotalCompra" prefWidth="120" text="Total (₡)" />
+                            <TableColumn fx:id="colEstadoCompra" prefWidth="130" text="Estado" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Nómina">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="GESTIÓN DE NÓMINA" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Cálculo y registro de salarios" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarNomina" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewNomina" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarNomina" prefHeight="250" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colNomId" prefWidth="60" text="ID" />
+                            <TableColumn fx:id="colNomEmpleado" prefWidth="150" text="Empleado" />
+                            <TableColumn fx:id="colNomPuesto" prefWidth="120" text="Puesto" />
+                            <TableColumn fx:id="colNomSalarioBase" prefWidth="100" text="Salario Base" />
+                            <TableColumn fx:id="colNomHorasExtras" prefWidth="100" text="Horas Extras" />
+                            <TableColumn fx:id="colNomDeducciones" prefWidth="100" text="Deducciones" />
+                            <TableColumn fx:id="colNomSalarioNeto" prefWidth="100" text="Salario Neto" />
+                        </columns>
+                    </TableView>
+                    
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Datos del Empleado" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Empleado:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtNomEmpleado" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            
+                            <Label text="Puesto:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtNomPuesto" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Salario Base:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextField fx:id="txtNomSalarioBase" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            
+                            <Label text="Horas Extras:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                            <TextField fx:id="txtNomHorasExtras" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            
+                            <Label text="Deducciones:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                            <TextField fx:id="txtNomDeducciones" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarNomina" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarNomina" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarNomina" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Contabilidad">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="LIBRO MAYOR (CONTABILIDAD)" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Registro de ingresos y egresos" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarContabilidad" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewContabilidad" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarMovimiento" prefHeight="400" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colContId" prefWidth="50" text="ID" />
+                            <TableColumn fx:id="colContFecha" prefWidth="100" text="Fecha" />
+                            <TableColumn fx:id="colContTipo" prefWidth="100" text="Tipo" />
+                            <TableColumn fx:id="colContSubTipo" prefWidth="120" text="Categoría" />
+                            <TableColumn fx:id="colContDesc" prefWidth="160" text="Descripción" />
+                            <TableColumn fx:id="colContMonto" prefWidth="100" text="Monto" />
+                        </columns>
+                    </TableView>
+                    
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Registrar Movimiento" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Fecha:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <DatePicker fx:id="dpContFecha" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            
+                            <Label text="Tipo:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <ComboBox fx:id="cmbContTipo" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Categoría:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextField fx:id="txtContSubTipo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            
+                            <Label text="Descripción:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                            <TextField fx:id="txtContDesc" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            
+                            <Label text="Monto:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                            <TextField fx:id="txtContMonto" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarMovimiento" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarMovimiento" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarMovimiento" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+
+                        <VBox style="-fx-padding: 20 0 0 0; -fx-spacing: 10;">
+                            <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Resumen General:" />
+                            <Label fx:id="lblTotalIngresos" style="-fx-text-fill: #4caf50; -fx-font-weight: bold;" text="Total Ingresos: $0.00" />
+                            <Label fx:id="lblTotalGastos" style="-fx-text-fill: #f44336; -fx-font-weight: bold;" text="Total Gastos: $0.00" />
+                            <Label fx:id="lblBalance" style="-fx-text-fill: #2196f3; -fx-font-weight: bold;" text="Balance: $0.00" />
+                        </VBox>
+                    </VBox>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Clientes">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="GESTIÓN DE CLIENTES" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Registro y seguimiento de clientes" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarCliente" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewClientes" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarCliente" prefHeight="400" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colCliId" prefWidth="50" text="ID" />
+                            <TableColumn fx:id="colCliNombre" prefWidth="150" text="Nombre" />
+                            <TableColumn fx:id="colCliCedula" prefWidth="100" text="Cédula" />
+                            <TableColumn fx:id="colCliTelefono" prefWidth="100" text="Teléfono" />
+                            <TableColumn fx:id="colCliEmail" prefWidth="150" text="Email" />
+                            <TableColumn fx:id="colCliTipo" prefWidth="100" text="Tipo" />
+                        </columns>
+                    </TableView>
+                    
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Datos del Cliente" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtCliNombre" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            
+                            <Label text="Cédula:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtCliCedula" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Teléfono:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextField fx:id="txtCliTelefono" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            
+                            <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                            <TextField fx:id="txtCliEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            
+                            <Label text="Tipo:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                            <ComboBox fx:id="cmbCliTipo" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarCliente" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarCliente" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarCliente" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Técnicos">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="GESTIÓN DE TÉCNICOS" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Asignación y desempeño de técnicos" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarTecnico" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewTecnicos" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarTecnico" prefHeight="400" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colTecId" prefWidth="50" text="ID" />
+                            <TableColumn fx:id="colTecNombre" prefWidth="150" text="Nombre" />
+                            <TableColumn fx:id="colTecEspecialidad" prefWidth="120" text="Especialidad" />
+                            <TableColumn fx:id="colTecCalificacion" prefWidth="100" text="Calificación" />
+                            <TableColumn fx:id="colTecTelefono" prefWidth="120" text="Teléfono" />
+                            <TableColumn fx:id="colTecDisponibilidad" prefWidth="100" text="Disp." />
+                        </columns>
+                    </TableView>
+                    
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Datos del Técnico" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Nombre:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtTecNombre" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            
+                            <Label text="Especialidad:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <ComboBox fx:id="cmbTecEspecialidad" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Calificación:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextField fx:id="txtTecCalificacion" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            
+                            <Label text="Teléfono:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                            <TextField fx:id="txtTecTelefono" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            
+                            <Label text="Disponibilidad:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                            <ComboBox fx:id="cmbTecDisponibilidad" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarTecnico" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarTecnico" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarTecnico" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Reportes">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="REPORTES FINANCIEROS" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Generación y exportación de reportes" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Generar Todos" />
+                    </children>
+                </HBox>
+                <GridPane hgap="20" style="-fx-padding: 20 0;" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="50" />
+                        <ColumnConstraints percentWidth="50" />
+                    </columnConstraints>
+                    <children>
+                        <VBox spacing="15">
+                            <children>
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Reportes Financieros" />
+                                <VBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 10;">
+                                    <children>
+                                        <CheckBox text="Estado de Resultados" />
+                                        <CheckBox text="Balance General" />
+                                        <CheckBox text="Flujo de Efectivo" />
+                                        <CheckBox text="Margen por Producto" />
+                                        <CheckBox text="Rentabilidad por Cliente" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox spacing="15" GridPane.columnIndex="1">
+                            <children>
+                                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Reportes Operativos" />
+                                <VBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 10;">
+                                    <children>
+                                        <CheckBox text="Producción por Técnico" />
+                                        <CheckBox text="Inventario Detallado" />
+                                        <CheckBox text="Compras vs Presupuesto" />
+                                        <CheckBox text="Eficiencia Instalación" />
+                                        <CheckBox text="Órdenes Pendientes" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+                <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #bbdefb; -fx-border-radius: 10; -fx-padding: 20; -fx-spacing: 15;">
+                    <children>
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Configuración del Reporte" />
+                        <GridPane hgap="15" vgap="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Período:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                                    <children>
+                                        <DatePicker promptText="Desde" />
+                                        <Label text="a" />
+                                        <DatePicker promptText="Hasta" />
+                                    </children>
+                                </HBox>
+                                <Label style="-fx-font-weight: bold;" text="Formato:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <HBox spacing="15" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <children>
+                                        <CheckBox text="PDF" />
+                                        <CheckBox text="Excel" />
+                                        <CheckBox text="HTML" />
+                                    </children>
+                                </HBox>
+                                <Label style="-fx-font-weight: bold;" text="Destino:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <ComboBox prefWidth="250" promptText="Seleccionar destino..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+                        <Button style="-fx-background-color: #4caf50; -fx-text-fill: white; -fx-font-weight: bold;" text="🖨Generar Reporte" />
+                    </children>
+                </VBox>
+                <VBox style="-fx-padding: 20 0;">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Historial de Reportes Recientes" />
+                        <TableView VBox.vgrow="ALWAYS" prefHeight="150">
+                            <columns>
+                                <TableColumn prefWidth="100" text="Fecha" />
+                                <TableColumn prefWidth="200" text="Nombre Reporte" />
+                                <TableColumn prefWidth="100" text="Tipo" />
+                                <TableColumn prefWidth="120" text="Generado por" />
+                                <TableColumn prefWidth="120" text="Acciones" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Configuración">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="CONFIGURACIÓN DEL SISTEMA" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Parámetros y preferencias" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarConfiguracion" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Limpiar Formulario" />
+                    </children>
+                </HBox>
+                
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewConfiguracion" HBox.hgrow="ALWAYS" onMouseClicked="#SeleccionarConfiguracion" prefHeight="400" prefWidth="650">
+                        <columns>
+                            <TableColumn fx:id="colConfId" prefWidth="50" text="ID" />
+                            <TableColumn fx:id="colConfClave" prefWidth="180" text="Clave" />
+                            <TableColumn fx:id="colConfValor" prefWidth="150" text="Valor" />
+                            <TableColumn fx:id="colConfDesc" prefWidth="250" text="Descripción" />
+                        </columns>
+                    </TableView>
+                    
+                    <VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-padding: 20; -fx-spacing: 15; -fx-effect: dropshadow(gaussian, rgba(10,61,98,0.15), 15, 0, 0, 5);" HBox.hgrow="ALWAYS">
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Parámetro de Configuración" />
+                        <GridPane hgap="10" vgap="10">
+                            <Label text="Clave:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtConfClave" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                            
+                            <Label text="Valor:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtConfValor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            
+                            <Label text="Descripción:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextField fx:id="txtConfDesc" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        </GridPane>
+                        
+                        <HBox spacing="10" style="-fx-padding: 10 0 0 0;">
+                            <Button onAction="#FnGuardarConfiguracion" style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Guardar" />
+                            <Button onAction="#FnEditarConfiguracion" style="-fx-background-color: #ff9800; -fx-text-fill: white;" text="Editar" />
+                            <Button onAction="#FnBorrarConfiguracion" style="-fx-background-color: #3a7ca5; -fx-text-fill: white;" text="Borrar" />
+                        </HBox>
+                    </VBox>
+                </HBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Usuarios">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="GESTIÓN DE USUARIOS" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Control de acceso y permisos" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button onAction="#FnLimpiarUsuario" style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="+ Nuevo Usuario" />
+                    </children>
+                </HBox>
+                <TableView VBox.vgrow="ALWAYS" fx:id="tableViewUsuarios" onMouseClicked="#SeleccionarUsuario" prefHeight="300" style="-fx-padding: 20 0;">
+                    <columns>
+                        <TableColumn fx:id="colUsuarioId" prefWidth="50" text="ID" />
+                        <TableColumn fx:id="colUsuarioUsername" prefWidth="120" text="Usuario" />
+                        <TableColumn fx:id="colUsuarioNombre" prefWidth="150" text="Nombre" />
+                        <TableColumn fx:id="colUsuarioEmail" prefWidth="150" text="Email" />
+                        <TableColumn fx:id="colUsuarioRol" prefWidth="120" text="Rol" />
+                        <TableColumn fx:id="colUsuarioDepto" prefWidth="120" text="Departamento" />
+                        <TableColumn fx:id="colUsuarioUltimoAcceso" prefWidth="120" text="Último Acceso" />
+                        <TableColumn fx:id="colUsuarioEstado" prefWidth="100" text="Estado" />
+                    </columns>
+                </TableView>
+                <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #bbdefb; -fx-border-radius: 10; -fx-padding: 20; -fx-spacing: 15;">
+                    <children>
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Nuevo Usuario" />
+                        <GridPane hgap="15" vgap="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Nombre Completo:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <TextField fx:id="txtUsuarioNombre" prefWidth="250" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label style="-fx-font-weight: bold;" text="Usuario:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <TextField fx:id="txtUsuarioUsername" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label style="-fx-font-weight: bold;" text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <TextField fx:id="txtUsuarioEmail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label style="-fx-font-weight: bold;" text="Contraseña:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                <PasswordField fx:id="txtUsuarioPassword" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                <Label style="-fx-font-weight: bold;" text="Rol:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                                <ComboBox fx:id="cmbUsuarioRol" prefWidth="200" promptText="Seleccionar rol..." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                <Label style="-fx-font-weight: bold;" text="Departamento:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                                <ComboBox fx:id="cmbUsuarioDepto" prefWidth="200" promptText="Seleccionar departamento..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+                        <HBox spacing="10">
+                            <Button onAction="#FnGuardarUsuario" style="-fx-background-color: #4caf50; -fx-text-fill: white; -fx-font-weight: bold;" text="Crear Usuario" />
+                            <Button onAction="#FnEditarUsuario" style="-fx-background-color: #ff9800; -fx-text-fill: white; -fx-font-weight: bold;" text="Actualizar" />
+                            <Button onAction="#FnBorrarUsuario" style="-fx-background-color: #3a7ca5; -fx-text-fill: white; -fx-font-weight: bold;" text="Borrar" />
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Ventas">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="MÓDULO DE VENTAS" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Cotizaciones y facturación" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="+ Nueva Cotización" />
+                    </children>
+                </HBox>
+                <GridPane hgap="20" style="-fx-padding: 20 0;" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                        <ColumnConstraints percentWidth="25" />
+                    </columnConstraints>
+                    <children>
+                        <VBox alignment="CENTER" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-spacing: 10;" GridPane.columnIndex="0">
+                            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="₡ 8.5M" />
+                            <Label text="Ventas del Mes" />
+                        </VBox>
+                        <VBox alignment="CENTER" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-spacing: 10;" GridPane.columnIndex="1">
+                            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #2196f3;" text="24" />
+                            <Label text="Cotizaciones Activas" />
+                        </VBox>
+                        <VBox alignment="CENTER" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-spacing: 10;" GridPane.columnIndex="2">
+                            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #4caf50;" text="18" />
+                            <Label text="Órdenes Confirmadas" />
+                        </VBox>
+                        <VBox alignment="CENTER" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20; -fx-spacing: 10;" GridPane.columnIndex="3">
+                            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #ff9800;" text="42%" />
+                            <Label text="Tasa Conversión" />
+                        </VBox>
+                    </children>
+               <rowConstraints>
+                  <RowConstraints />
+               </rowConstraints>
+                </GridPane>
+                <VBox style="-fx-padding: 0 0 20 0;">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Cotizaciones Recientes" />
+                        <TableView VBox.vgrow="ALWAYS" prefHeight="200">
+                            <columns>
+                                <TableColumn prefWidth="100" text="Código" />
+                                <TableColumn prefWidth="150" text="Cliente" />
+                                <TableColumn prefWidth="100" text="Fecha" />
+                                <TableColumn prefWidth="120" text="Monto" />
+                                <TableColumn prefWidth="100" text="Válido hasta" />
+                                <TableColumn prefWidth="100" text="Estado" />
+                                <TableColumn prefWidth="150" text="Acciones" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #bbdefb; -fx-border-radius: 10; -fx-padding: 20; -fx-spacing: 15;">
+                    <children>
+                        <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="Nueva Cotización" />
+                        <GridPane hgap="15" vgap="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Cliente:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <ComboBox prefWidth="300" promptText="Seleccionar cliente..." GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label style="-fx-font-weight: bold;" text="Tipo de Venta:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <ComboBox promptText="Seleccionar tipo..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label style="-fx-font-weight: bold;" text="Válido hasta:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label style="-fx-font-weight: bold;" text="Agregar Producto:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                    <children>
+                                        <ComboBox prefWidth="200" promptText="Buscar producto..." />
+                                        <Button style="-fx-background-color: #4caf50; -fx-text-fill: white;" text="Agregar" />
+                                    </children>
+                                </HBox>
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+                        <Button style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" text="Generar Cotización" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Instalaciones">
+        <VBox style="-fx-background-color:#f5f9ff;-fx-spacing:15;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+            <children>
+                <HBox alignment="CENTER_LEFT">
+                    <VBox>
+                        <Label style="-fx-font-size:24px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text="PROGRAMACIÓN DE INSTALACIONES" />
+                        <Label style="-fx-font-size:13px;-fx-text-fill:#3a7ca5;" text="Agenda y seguimiento de instalaciones en campo" />
+                    </VBox>
+                </HBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:25;-fx-spacing:15; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.15),15,0,0,5);">
+                    <children>
+                        <Label style="-fx-font-size:18px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;" text=" PROGRAMAR NUEVA INSTALACIÓN" />
+                        <GridPane hgap="20" vgap="14">
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="50" />
+                                <ColumnConstraints percentWidth="50" />
+                            </columnConstraints>
+                            <VBox spacing="12" GridPane.columnIndex="0">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="140" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Orden de trabajo:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <ComboBox fx:id="cmbOrdenTrabajo" prefWidth="250" promptText="Seleccionar orden..." GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Técnico:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbTecnicoInst" prefWidth="250" promptText="Asignar técnico..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Estado:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="cmbEstadoInst" prefWidth="250" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                            <VBox spacing="12" GridPane.columnIndex="1">
+                                <GridPane hgap="12" vgap="12">
+                                    <columnConstraints>
+                                        <ColumnConstraints halignment="RIGHT" minWidth="80" />
+                                        <ColumnConstraints />
+                                    </columnConstraints>
+                                    <Label text="Fecha:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                    <DatePicker fx:id="dpFechaInst" prefWidth="220" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                    <Label text="Hora:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbHora" prefWidth="220" promptText="Seleccionar hora..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Notas:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                    <TextArea fx:id="taNotas" prefRowCount="3" prefWidth="220" promptText="Instrucciones especiales, dirección, etc." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                                </GridPane>
+                            </VBox>
+                     <rowConstraints>
+                        <RowConstraints />
+                     </rowConstraints>
+                        </GridPane>
+                        <HBox alignment="CENTER_RIGHT" spacing="10" style="-fx-padding:10 0 0 0;">
+                            <Button onAction="#FnNuevoInstalacion" style="-fx-background-color:#5a7a9a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="NUEVO" />
+                            <Button onAction="#FnGuardarInstalacion" style="-fx-background-color:#0a3d62;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="GUARDAR" />
+                            <Button onAction="#FnEditarInstalacion" style="-fx-background-color:#2c5f8a;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="EDITAR" />
+                            <Button onAction="#FnBorrarInstalacion" style="-fx-background-color:#3a7ca5;-fx-text-fill:white;-fx-font-size:14px; -fx-font-weight:bold;-fx-padding:12 20;-fx-background-radius:30;" text="BORRAR" />
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox style="-fx-background-color:white;-fx-background-radius:12;-fx-padding:20; -fx-effect:dropshadow(gaussian,rgba(10,61,98,0.1),10,0,0,3);" VBox.vgrow="ALWAYS">
+                    <Label style="-fx-font-size:16px;-fx-font-weight:bold;-fx-text-fill:#0a3d62;-fx-padding:0 0 10 0;" text="🗓 INSTALACIONES PROGRAMADAS" />
+                    <TableView VBox.vgrow="ALWAYS" fx:id="tableViewInstalaciones" prefHeight="250" onMouseClicked="#SeleccionarInstalacion">
+                        <columns>
+                            <TableColumn fx:id="colOrden" prefWidth="140" text="Orden Trabajo" />
+                            <TableColumn fx:id="colFecha" prefWidth="110" text="Fecha" />
+                            <TableColumn fx:id="colHora" prefWidth="90" text="Hora" />
+                            <TableColumn fx:id="colTecnicoInst" prefWidth="180" text="Técnico" />
+                            <TableColumn fx:id="colEstadoInst" prefWidth="130" text="Estado" />
+                        </columns>
+                    </TableView>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+
+    <Tab text="Actividad">
+        <VBox style="-fx-background-color: #f5f9ff;" VBox.vgrow="ALWAYS">
+            <padding><Insets bottom="20" left="20" right="20" top="20" /></padding>
+            <children>
+                <HBox>
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text="ACTIVIDAD DEL SISTEMA" />
+                                <Label style="-fx-font-size: 14px; -fx-text-fill: #3f51b5;" text="Registro de eventos y acciones" />
+                            </children>
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button style="-fx-background-color: #2196f3; -fx-text-fill: white;" text="Exportar Log" />
+                    </children>
+                </HBox>
+                <HBox spacing="20" style="-fx-padding: 20 0;" VBox.vgrow="ALWAYS">
+                    <children>
+                        <ComboBox prefWidth="150" promptText="Filtrar por tipo..." />
+                        <ComboBox prefWidth="150" promptText="Filtrar por usuario..." />
+                        <DatePicker promptText="Fecha desde" />
+                        <DatePicker promptText="Fecha hasta" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button style="-fx-background-color: #5c6bc0; -fx-text-fill: white;" text="Filtrar" />
+                    </children>
+                </HBox>
+                <VBox spacing="10">
+                    <children>
+                        <HBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 15;">
+                            <children>
+                                <VBox alignment="CENTER" style="-fx-background-color: #e3f2fd; -fx-background-radius: 20; -fx-padding: 10; -fx-min-width: 40; -fx-min-height: 40;">
+                                    <Label style="-fx-font-size: 16px;" text="" />
+                                </VBox>
+                                <VBox>
+                                    <Label style="-fx-font-weight: bold;" text="Nueva entrada de inventario registrada" />
+                                    <Label style="-fx-text-fill: #666;" text="Material: Perfil Alum. 60mm | Cantidad: 500m | Usuario: Admin" />
+                                    <Label style="-fx-text-fill: #888; -fx-font-size: 12px;" text="Hace 5 minutos" />
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 15;">
+                            <children>
+                                <VBox alignment="CENTER" style="-fx-background-color: #f1f8e9; -fx-background-radius: 20; -fx-padding: 10; -fx-min-width: 40; -fx-min-height: 40;">
+                                    <Label style="-fx-font-size: 16px;" text="" />
+                                </VBox>
+                                <VBox>
+                                    <Label style="-fx-font-weight: bold;" text="Orden de trabajo completada" />
+                                    <Label style="-fx-text-fill: #666;" text="Orden: OT-2024-015 | Cliente: Constructora Sol | Técnico: Carlos R." />
+                                    <Label style="-fx-text-fill: #888; -fx-font-size: 12px;" text="Hace 2 horas" />
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 15;">
+                            <children>
+                                <VBox alignment="CENTER" style="-fx-background-color: #fff3e0; -fx-background-radius: 20; -fx-padding: 10; -fx-min-width: 40; -fx-min-height: 40;">
+                                    <Label style="-fx-font-size: 16px;" text="⚠" />
+                                </VBox>
+                                <VBox>
+                                    <Label style="-fx-font-weight: bold;" text="Alerta de stock bajo generada" />
+                                    <Label style="-fx-text-fill: #666;" text="Material: Vidrio Templado 6mm | Stock actual: 8m² | Mínimo: 20m²" />
+                                    <Label style="-fx-text-fill: #888; -fx-font-size: 12px;" text="Hace 4 horas" />
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 15;">
+                            <children>
+                                <VBox alignment="CENTER" style="-fx-background-color: #fce4ec; -fx-background-radius: 20; -fx-padding: 10; -fx-min-width: 40; -fx-min-height: 40;">
+                                    <Label style="-fx-font-size: 16px;" text="" />
+                                </VBox>
+                                <VBox>
+                                    <Label style="-fx-font-weight: bold;" text="Factura generada y enviada" />
+                                    <Label style="-fx-text-fill: #666;" text="Factura: FAC-2024-128 | Cliente: Juan Pérez | Monto: ₡ 325,000" />
+                                    <Label style="-fx-text-fill: #888; -fx-font-size: 12px;" text="Hace 1 día" />
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox style="-fx-background-color: white; -fx-background-radius: 8; -fx-padding: 15; -fx-spacing: 15;">
+                            <children>
+                                <VBox alignment="CENTER" style="-fx-background-color: #e8eaf6; -fx-background-radius: 20; -fx-padding: 10; -fx-min-width: 40; -fx-min-height: 40;">
+                                    <Label style="-fx-font-size: 16px;" text="👤" />
+                                </VBox>
+                                <VBox>
+                                    <Label style="-fx-font-weight: bold;" text="Nuevo usuario creado" />
+                                    <Label style="-fx-text-fill: #666;" text="Usuario: lmendez | Rol: Técnico | Creado por: Admin" />
+                                    <Label style="-fx-text-fill: #888; -fx-font-size: 12px;" text="Hace 2 días" />
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: #bbdefb; -fx-border-radius: 10; -fx-padding: 20; -fx-spacing: 15;">
+                    <children>
+                        <Label style="-fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #1a237e;" text=" Estadísticas de Actividad" />
+                        <GridPane hgap="20" vgap="10">
+                            <children>
+                                <Label style="-fx-font-weight: bold;" text="Eventos Hoy:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <Label text="42" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label style="-fx-font-weight: bold;" text="Eventos Esta Semana:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <Label text="215" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label style="-fx-font-weight: bold;" text="Usuarios Activos (7 días):" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <Label text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                <Label style="-fx-font-weight: bold;" text="Errores Registrados:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                                <Label style="-fx-text-fill: #f44336;" text="3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </Tab>
+</TabPane>
+    </children>
+</VBox>
