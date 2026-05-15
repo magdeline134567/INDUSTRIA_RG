@@ -41,3 +41,4 @@ Mejora en envio de notificaciones en EmailSender
 Actualizacion del modelo Compra con nuevos proveedores
 Revision de datos de TecnicoCompleto
 Mejora en instalacion automatica de DatabaseInstaller
+Actualizacion de configuracion en CheckConfig
