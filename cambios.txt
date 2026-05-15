@@ -7,3 +7,4 @@ Controlador del menu principal implementado
 Clase principal de inicio de aplicacion configurada
 Modelo Cliente creado con atributos y metodos necesarios
 Modelo ClienteCompleto desarrollado con datos extendidos
+Modelo Compra implementado para gestion de compras
