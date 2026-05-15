@@ -27,3 +27,4 @@ Gestor de reportes desarrollado para exportacion de datos
 Configuracion del modulo info completada
 Revision de validaciones en ClienteController
 Optimizacion de consultas SQL en Conexion
+Mejora en el manejo de errores de SessionManager
