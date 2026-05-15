@@ -33,3 +33,4 @@ Mejora en la logica de OrdenTrabajo
 Actualizacion del modelo Instalacion con fecha y hora
 Revision del calculo de nomina en NominaItem
 Mejora en registro de MovimientoContable
+Actualizacion de alertas de stock en InventarioItem
